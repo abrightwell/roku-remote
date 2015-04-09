@@ -1,10 +1,12 @@
-import curses, pycurl
+#!/usr/bin/python
+
+import curses, pycurl, sys
 from urllib import urlencode
 
 stdscr = curses.initscr()
 stdscr.keypad(1)
 
-roku_ip = '10.0.1.9'
+roku_ip = sys.argv[1]
 roku_port = '8060'
 roku_url = roku_ip + ':' + roku_port
 
@@ -35,5 +37,7 @@ while key != ord('q'):
         send_command('select')
     elif key == curses.KEY_HOME:
         send_command('home')
+    elif key == curses.KEY_DC:
+        send_command('back')
 
 curses.endwin()
