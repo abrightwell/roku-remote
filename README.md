@@ -12,11 +12,11 @@ $> ./remote.py <ip-addr>
 
 Note: No output is currently displayed.
 
-Up - Keypad Up
-Down - Keypad Down
-Left - Keypad Left
-Right - Keypad Right
-Select - Numpad Enter (currently only supports numpad enter key)
-Back - Delete
-Home - Home
-Quit - q
+* Up - Keypad Up
+* Down - Keypad Down
+* Left - Keypad Left
+* Right - Keypad Right
+* Select - Numpad Enter (currently only supports numpad enter key)
+* Back - Delete
+* Home - Home
+* Quit - q
